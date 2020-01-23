@@ -3,10 +3,14 @@ from app import app
 from flask import redirect, render_template, url_for
 
 
-@app.route('/index.html')
+@app.route('/homepage.html')
 def home():
-	return render_template('homepage.html', title_bar ='Homepage')
+	return render_template('homepage.html', title_bar ='Circuit Syndicate Racing')
 
-# @app.route('')
-# def downpipe_page():
-	# return render_template('PySchool_Report_colab0.html', title_bar ='Test')
+@app.route('/product.html')
+def product():
+	return render_template('product.html', title_bar ='Circuit Syndicate Racing')
+
+@app.route('/about.html')
+def about():
+	return render_template('about.html', title_bar ='Circuit Syndicate Racing')
