@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en">
-
 <!------------------- HEAD ------------------->
 <head>
   <!-- Required meta tags -->
@@ -14,22 +13,18 @@
   {% include 'css/styles.css' %}
 
   <title>{{ title_bar }}</title>
-
-
 </head>
 <!------------------- END HEAD ------------------->
 
 <!------------------- Body ------------------->
-<body>
-  <div class="container-fluid">
-    {% include 'base/navbar.html' %}
+<body id='body'>
 
-    <div class="row">
-      {% block Content %}{% endblock %}
-    </div>
+  {% include 'base/navbar.html' %}
 
-  </div>
+  {% block Content %}{% endblock %}
 
+
+  <!-- FOOTER -->
   <footer class="footer text-faded text-center py-5">
     <div class="container">
       <p class="m-0 small">Copyright &copy; Circuit Syndicate 2020</p>
