@@ -1,2 +1,5 @@
 <i class="fab fa-facebook-square"></i>
 <i class="fab fa-youtube"></i>
+
+skeleton
+<img src="../../../static/icons/youtube-brands.svg" alt="YouTube">

@@ -9,21 +9,23 @@
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/7ca11da424.js" crossorigin="anonymous"></script>
+  <!-- Custom CSS -->
+  {% include 'css/styles.css' %}
 
   <title>{{ title_bar }}</title>
+
+
 </head>
 <!------------------- END HEAD ------------------->
 
-<!-- Body -->
+<!------------------- Body ------------------->
 <body>
   <div class="container-fluid">
-
     {% include 'base/navbar.html' %}
 
     <div class="row">
-
       {% block Content %}{% endblock %}
-
     </div>
 
   </div>
