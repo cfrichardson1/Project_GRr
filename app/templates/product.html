@@ -1,7 +1,15 @@
 {% extends 'base/skeleton.html' %}
-
 {% block Content %}
+<div class="container">
+  <div class="row">
+    <div class="col">
+{% include 'product_carousel.html' %}
+    </div>
+    <div class="col">
+      One of three columns
+    </div>
+  </div>
+</div>
 
-Product
 
 {% endblock %}

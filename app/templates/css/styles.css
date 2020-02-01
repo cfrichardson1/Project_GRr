@@ -2,6 +2,9 @@
 /* ------------------------------------------------ */
   /* NAVBAR */
 /* ------------------------------------------------ */
+#navbar_background {
+}
+
 .nav-item {
   padding-top: 5px;
 }
@@ -11,6 +14,9 @@
   font-weight: bold;
 }
 
+#nav_logo {
+  width: 35%;
+}
 #social_media_icons{
   width:120%;
 }
@@ -19,6 +25,10 @@
 /* ------------------------------------------------ */
 #body {
   background-color:#F8F9FA;
+}
+
+.footer {
+  padding-left: -20px;
 }
 
 /* ------------------------------------------------ */
@@ -32,8 +42,26 @@
 /* ------------------------------------------------ */
   /* PRODUCT */
 /* ------------------------------------------------ */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
 
+  outline: black;
 
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: red;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: red;
+}
 /* ------------------------------------------------ */
   /* ABOUT */
 /* ------------------------------------------------ */
