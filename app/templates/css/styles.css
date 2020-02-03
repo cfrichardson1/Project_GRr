@@ -18,19 +18,41 @@
   width: 35%;
 }
 #social_media_icons{
-  width:120%;
+  color: black;
+  padding-left: 45px;
+  padding-top: 10px;
 }
 /* ------------------------------------------------ */
   /* All pages */
 /* ------------------------------------------------ */
-#body {
+#body{
   background-color:#F8F9FA;
 }
 
-.footer {
-  padding-left: -20px;
+.footer{
 }
 
+.b_title{
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+#follow_links{
+  display: block;
+  font-weight: bold;
+  margin-bottom: 1em;
+  color: grey;
+}
+
+#follow_links:hover{
+  color: #00ff00;
+}
+
+#footer{
+  background-color: black;
+  color: grey;
+  padding-top: 50px;
+}
 /* ------------------------------------------------ */
   /* HOMEPAGE */
 /* ------------------------------------------------ */
