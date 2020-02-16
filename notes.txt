@@ -1,14 +1,1 @@
-<!------------ SOCIAL MEDIA ICONS/LINKS ------------>
-<b class='b_title'>FOLLOW US:</b><BR>
-<a id="social_media_icons" href="hhttps://www.instagram.com/zentuning">
-  <i class="fab fa-instagram fa-3x"></i>
-</a>
-<a id="social_media_icons" href="https://www.facebook.com/ZenTuning/">
-  <i class="fab fa-facebook-square fa-3x"></i>
-</a>
-<a id="social_media_icons" href="https://www.facebook.com/ZenTuning/">
-  <i class="fab fa-youtube fa-3x"></i>
-</a>
-<a id="social_media_icons" href="https://www.facebook.com/ZenTuning/">
-  <i class="fab fa-ebay fa-3x"></i>
-</a>
+ADD *<li class="nav-item active">* to NAVBAR on active pages

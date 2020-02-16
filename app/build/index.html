@@ -1,24 +1,16 @@
-<!doctype html>
-<html lang="en">
-<!------------------- HEAD ------------------->
-<head
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <script src="https://kit.fontawesome.com/7ca11da424.js" crossorigin="anonymous"></script>
-  <!-- Custom CSS -->
-  <style>
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+<!-- Bootstrap CSS CDN -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<!-- Custom CSS -->
+<style>
 /* ------------------------------------------------ */
   /* NAVBAR */
 /* ------------------------------------------------ */
-#navbar_background {
- background-image: url('static/lexus_banner.jpg');
- background-repeat: no-repeat;
- background-size: 25% 100%;
-
-}
 
 .nav-item {
   padding-top: 5px;
@@ -33,15 +25,51 @@
   width: 35%;
 }
 #social_media_icons{
-  width:120%;
+  color: black;
+  padding-left: 45px;
+  padding-top: 10px;
 }
 /* ------------------------------------------------ */
   /* All pages */
 /* ------------------------------------------------ */
-#body {
+#body{
   background-color:#F8F9FA;
+  width:100%;
+  height:100%;
 }
 
+html {
+    position: relative;
+    min-width: 1024px;
+    min-height: 768px;
+    height: 100%;
+}
+
+.b_title{
+  font-size: 18px;
+  text-decoration: underline;
+}
+
+#follow_links{
+  display: block;
+  font-weight: bold;
+  margin-bottom: 1em;
+  color: grey;
+}
+
+#follow_links:hover{
+  color: #00ff00;
+}
+
+#footer{
+  background-image: url("static/banner.jpg");
+  background-size: 40%;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-color: black;
+  color: grey;
+  padding-top: 10px;
+}
 /* ------------------------------------------------ */
   /* HOMEPAGE */
 /* ------------------------------------------------ */
@@ -53,11 +81,15 @@
 /* ------------------------------------------------ */
   /* PRODUCT */
 /* ------------------------------------------------ */
+div.product{
+  min-height: 600px;
+  max-height: 600px;
+  height: 100%;
+}
+
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-
   outline: black;
-
   background-image: none;
 }
 
@@ -77,66 +109,83 @@
   /* ABOUT */
 /* ------------------------------------------------ */
 </style>
-  <title>Circuit Syndicate Racing</title>
+<title>Circuit Syndicate</title>
 </head>
-<!------------------- END HEAD ------------------->
-<!------------------- Body ------------------->
-<body id='body'>
+  <!-- Navbar -->
   <!------------------- NAVBAR ------------------->
-<div class="container-fluid" id="navbar_background">
-  <div class="row">
-    <div class="d-flex justify-content-center">
-      <img src="../../static/logo.png" alt="Circuit Syndicate Logo" id = 'nav_logo'>
-    </div>
-  </div>
-
-  <div class="row">
-    <nav class="navbar navbar-expand-lg navbar-light justify-content-between">
-      <a class="navbar-brand"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-          <li class="nav-item active align-middle">
-            <a class="nav-link" href="homepage.html">Home<span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="product.html">Downpipe</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="about.html">About</a>
-          </li>
-          <!------------ SOCIAL MEDIA ICONS/LINKS ------------>
-          <a class="nav-link" id="social_media_icons" href="hhttps://www.instagram.com/zentuning">
-            <i class="fab fa-instagram fa-2x"></i>
-          </a>
-          <a class="nav-link" id="social_media_icons" href="https://www.facebook.com/ZenTuning/">
-            <i class="fab fa-facebook-square fa-2x"></i>
-          </a>
-          <a class="nav-link" id="social_media_icons" href="https://www.facebook.com/ZenTuning/">
-            <i class="fab fa-youtube fa-2x"></i>
-          </a>
-        </ul>
-      </div>
-    </nav>
-  </div>
-</div>
-  <!------------------- END NAVBAR ------------------->
-  
+<!-- LOGO -->
 <div class="d-flex justify-content-center">
-  <img id = "landing_image" src="../static/landingphoto.jpg" alt="Circuit Syndicate Downpipe">
+  <img src="static/logo.PNG" class="img-fluid" alt="Circuit Syndicate Logo" id = 'nav_logo'>
+</div>
+<nav class="navbar navbar-light navbar-expand-md bg-light justify-content-center">
+  <button class="navbar-toggler ml-1" type="button" data-toggle="collapse" data-target="#collapsingNavbar2">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="navbar-collapse collapse justify-content-between align-items-center w-100" id="collapsingNavbar2">
+    <ul class="navbar-nav mx-auto text-center">
+      <li class="nav-item active align-middle">
+        <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="product.html">Downpipe</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="about.html">About</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!------------------- END NAVBAR ------------------->
+    <div class="row">
+      
+<div class="row">
+  <div id = 'main_content' class="col-11">
+    <!-- landing_image -->
+    <div class="d-flex justify-content-center">
+      <img id ="landing_image" class="img-fluid" src="../static/landing_photo.png"
+      alt="Circuit Syndicate Downpipe">
+    </div>
+  </div>
 </div>
 
-</body>
-  <!-- FOOTER -->
-  <footer class="footer text-faded text-center py-5">
-    <div class="container">
-      <p class="m-0 small">Copyright &copy; Circuit Syndicate 2020</p>
+
     </div>
-  </footer>
-  <!-- Bootstrap core JavaScript -->
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <!-- CONTACT STUFF -->
+<div id="footer">
+  <div class="row">
+    <div class="col-sm-2">
+    </div>
+    <div class="col-sm-4">
+      <p class="text-center">
+        <b class='b_title'>CONTACT US:
+        </b>
+        <b><BR>Call Us:<BR>sales@CircuitSyndicate.com<BR><BR>Call Us:<BR>(949) TOO-FAST</b>
+        </p>
+      </div>
+      <div class="col-sm-4">
+        <p class="text-center">
+          <b class='b_title'>FOLLOW US:</b><BR>
+            <a id="follow_links" href="">Ebay</a>
+            <a id="follow_links" href="https://www.instagram.com/zentuning/">Instagram</a>
+            <a id="follow_links" href="https://www.facebook.com/ZenTuning/">Facebook</a>
+            <a id="follow_links" href="">Youtube</a>
+          </p>
+        </div>
+        <div class="col-sm-2">
+        </div>
+      </div>
+      <footer class="text-faded text-center py-5">
+        <div class="container">
+          <p class="m-0 small">Copyright &copy; Circuit Syndicate 2020</p>
+        </div>
+      </footer>
+    </div>
+
+  </body>
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 </html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+
+{% include 'base_top.html' %}
+  <!-- Navbar -->
+  {% include 'base_navbar.html' %}
+    <div class="row">
+      {% block Content %}{% endblock %}
+
+    </div>
+
+    {% include 'contact.html' %}
+
+  </body>
+
+{% include 'base_bottom.html' %}
+</html>
