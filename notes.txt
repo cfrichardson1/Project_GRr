@@ -1,1 +1,1 @@
-ADD *<li class="nav-item active">* to NAVBAR on active pages
+CSS color is changing colors for even those whom aren't associated with tag -_-

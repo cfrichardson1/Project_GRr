@@ -1,0 +1,49 @@
+<style>
+/* -------------------- */
+  /* CONTACT */
+/* -------------------- */
+strong.contact{
+  color: white;
+  font-weight: bold;
+}
+#contact{
+  color: white;
+}
+#links{
+font-weight: bold;
+margin-bottom: 1em;
+color: white;
+}
+#links:hover{
+  color: #66ff33;
+}
+/* -------------------- */
+  /* NAVBAR */
+/* -------------------- */
+.nav-item {
+  padding-top: 5px;
+}
+.nav-link {
+  font-size: 20px;
+  font-weight: bold;
+}
+#nav_logo {
+  width: 60%;
+}
+/* -------------------- */
+  /* SITES */
+/* -------------------- */
+strong.bullet{
+  font-weight: bold;
+  font-size: 35px;
+}
+/* HOME */
+img.landing{
+  width: 100%;
+  margin-left: 5%;
+}
+h1, strong.landing_text{
+  font-size: 200%;
+  font-weight: bold;
+}
+</style>
