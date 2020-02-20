@@ -1,130 +1,79 @@
 <!DOCTYPE html>
 <html>
 <head>
-<!-- Required meta tags -->
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
-<!-- Bootstrap CSS CDN -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-<!-- Custom CSS -->
-<style>
-/* ------------------------------------------------ */
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <style>
+/* -------------------- */
+  /* CONTACT */
+/* -------------------- */
+strong.contact{
+  color: white;
+  font-weight: bold;
+}
+#contact{
+  color: white;
+}
+#links{
+font-weight: bold;
+margin-bottom: 1em;
+color: white;
+}
+#links:hover{
+  color: #66ff33;
+}
+/* -------------------- */
   /* NAVBAR */
-/* ------------------------------------------------ */
-
+/* -------------------- */
 .nav-item {
   padding-top: 5px;
 }
-
 .nav-link {
   font-size: 20px;
   font-weight: bold;
 }
-
 #nav_logo {
-  width: 35%;
+  width: 60%;
 }
-#social_media_icons{
-  color: black;
-  padding-left: 45px;
-  padding-top: 10px;
-}
-/* ------------------------------------------------ */
-  /* All pages */
-/* ------------------------------------------------ */
-#body{
-  background-color:#F8F9FA;
-  width:100%;
-  height:100%;
-}
-
-html {
-    position: relative;
-    min-width: 1024px;
-    min-height: 768px;
-    height: 100%;
-}
-
-.b_title{
-  font-size: 18px;
-  text-decoration: underline;
-}
-
-#follow_links{
-  display: block;
+/* -------------------- */
+  /* SITES */
+/* -------------------- */
+strong.bullet{
   font-weight: bold;
-  margin-bottom: 1em;
-  color: grey;
+  font-size: 35px;
 }
-
-#follow_links:hover{
-  color: #00ff00;
+/* HOME */
+img.landing{
+  width: 100%;
+  margin-left: 5%;
 }
-
-#footer{
-  background-image: url("static/banner.jpg");
-  background-size: 40%;
-  background-repeat: no-repeat;
-  background-position: left;
-  background-color: black;
-  color: grey;
-  padding-top: 10px;
+h1, strong.landing_text{
+  font-size: 200%;
+  font-weight: bold;
 }
-/* ------------------------------------------------ */
-  /* HOMEPAGE */
-/* ------------------------------------------------ */
-#landing_image {
-   width: 50%;
-}
-
-
-/* ------------------------------------------------ */
-  /* PRODUCT */
-/* ------------------------------------------------ */
-div.product{
-  min-height: 600px;
-  max-height: 600px;
-  height: 100%;
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  outline: black;
-  background-image: none;
-}
-
-.carousel-control-next-icon:after
-{
-  content: '>';
-  font-size: 55px;
-  color: red;
-}
-
-.carousel-control-prev-icon:after {
-  content: '<';
-  font-size: 55px;
-  color: red;
-}
-/* ------------------------------------------------ */
-  /* ABOUT */
-/* ------------------------------------------------ */
 </style>
-<title>Circuit Syndicate</title>
+  <title>Circuit Syndicate</title>
 </head>
-  <!-- Navbar -->
+<hr>
+  <body>
   <!------------------- NAVBAR ------------------->
 <!-- LOGO -->
 <div class="d-flex justify-content-center">
-  <img src="static/logo.PNG" class="img-fluid" alt="Circuit Syndicate Logo" id = 'nav_logo'>
+  <img src="../static/logo.png" class="img-fluid" alt="Circuit Syndicate Logo" id = 'nav_logo'>
 </div>
-<nav class="navbar navbar-light navbar-expand-md bg-light justify-content-center">
+<!-- NAV -->
+<nav class="navbar navbar-dark navbar-expand-md bg-dark justify-content-center">
   <button class="navbar-toggler ml-1" type="button" data-toggle="collapse" data-target="#collapsingNavbar2">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="navbar-collapse collapse justify-content-between align-items-center w-100" id="collapsingNavbar2">
     <ul class="navbar-nav mx-auto text-center">
       <li class="nav-item active align-middle">
-        <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="index.html">Home</a>
       </li>
       <li class="nav-item active">
         <a class="nav-link" href="product.html">Downpipe</a>
@@ -135,55 +84,63 @@ div.product{
     </ul>
   </div>
 </nav>
-<!------------------- END NAVBAR ------------------->
-    <div class="row">
-      
-<div class="row">
-  <div id = 'main_content' class="col-11">
-    <!-- landing_image -->
-    <div class="d-flex justify-content-center">
-      <img id ="landing_image" class="img-fluid" src="../static/landing_photo.png"
-      alt="Circuit Syndicate Downpipe">
+  
+<div class="container mt-2">
+  <div class="row">
+    <div class="col-12">
+      <div class="jumbotron">
+        <h1 class="text-center landing_text">Want more HP/TQ from your Lexus?</h1>
+        <div class="row justify-content-center">
+          <img src="../static/landing_photo.png" alt="Lexus IS200t/RC200t Downpipe" class="center img-fluid landing">
+          <p>
+            <strong class="landing_text">+Horsepower<br>
+            +Torque<br>
+            +Throttle Response<br></strong>
+          </p>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-auto">
+            <p><a id="links" class="btn btn-dark btn-lg" href="#" role="button">Shop Downpipes</a> </p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
 
-
-    </div>
-
-    <!-- CONTACT STUFF -->
-<div id="footer">
+  <hr>
+<!-- CONTACTS -->
+<div id="contact" class="container-fluid bg-dark">
   <div class="row">
-    <div class="col-sm-2">
-    </div>
-    <div class="col-sm-4">
+    <div class="col-lg-2 col-12"></div>
+    <div class="col-lg-4 col-md-6 col-sm-6 mb-md-0 mb-2">
+      <h2 id="contact" class="text-center">Contact Us</h2>
       <p class="text-center">
-        <b class='b_title'>CONTACT US:
-        </b>
-        <b><BR>Call Us:<BR>sales@CircuitSyndicate.com<BR><BR>Call Us:<BR>(949) TOO-FAST</b>
-        </p>
-      </div>
-      <div class="col-sm-4">
-        <p class="text-center">
-          <b class='b_title'>FOLLOW US:</b><BR>
-            <a id="follow_links" href="">Ebay</a>
-            <a id="follow_links" href="https://www.instagram.com/zentuning/">Instagram</a>
-            <a id="follow_links" href="https://www.facebook.com/ZenTuning/">Facebook</a>
-            <a id="follow_links" href="">Youtube</a>
-          </p>
-        </div>
-        <div class="col-sm-2">
-        </div>
-      </div>
-      <footer class="text-faded text-center py-5">
-        <div class="container">
-          <p class="m-0 small">Copyright &copy; Circuit Syndicate 2020</p>
-        </div>
-      </footer>
+        <strong class="contact">Email</strong>:<br>
+        <a id="links" href="https://www.w3schools.com/html/">sales@zen.com</a><br>
+        <strong class="contact">Phone</strong>:(800) big-buty
+      </p>
     </div>
-
+    <div id="contact" class="col-lg-4 col-12">
+      <h2 class="text-center">Follow Us</h2>
+      <p class="text-center">
+        <a id="links" href="www.ebay.com">Ebay</a><br>
+        <a id="links" href="https://www.instagram.com/zentuning/">Instagram</a><br>
+        <a id="links" href="https://www.facebook.com/ZenTuning/">Facebook</a><br>
+        <a id="links" href="www.youtube.com">Youtube</a>
+      </p>
+    </div>
+  </div>
+  <footer class="text-center">
+    <div class="row">
+      <div class="col-12">
+        <p>Copyright © Circuit Syndicate. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</div>
+<!-- END CONTACTS -->
   </body>
-
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>

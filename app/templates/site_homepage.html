@@ -1,10 +1,25 @@
 {% extends 'base_skeleton.html' %}
 {% block Content %}
-<div id = 'main_content' class="col-11">
-  <!-- landing_image -->
-  <div class="d-flex justify-content-center">
-    <img id ="landing_image" class="img-fluid" src="../static/landing_photo.png"
-    alt="Circuit Syndicate Downpipe">
+<div class="container mt-2">
+  <div class="row">
+    <div class="col-12">
+      <div class="jumbotron">
+        <h1 class="text-center landing_text">Want more HP/TQ from your Lexus?</h1>
+        <div class="row justify-content-center">
+          <img src="../static/landing_photo.png" alt="Lexus IS200t/RC200t Downpipe" class="center img-fluid landing">
+          <p>
+            <strong class="landing_text">+Horsepower<br>
+            +Torque<br>
+            +Throttle Response<br></strong>
+          </p>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-auto">
+            <p><a id="links" class="btn btn-dark btn-lg" href="#" role="button">Shop Downpipes</a> </p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 {% endblock %}
