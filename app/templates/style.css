@@ -2,6 +2,9 @@
 /* -------------------- */
   /* CONTACT */
 /* -------------------- */
+h2.text-center{
+  text-decoration: underline;
+}
 strong.contact{
   color: white;
   font-weight: bold;
@@ -20,19 +23,23 @@ color: white;
 /* -------------------- */
   /* NAVBAR */
 /* -------------------- */
-.nav-item {
+img.logo{
+  width: 50%;
+}
+li.nav-item {
   padding-top: 5px;
 }
-.nav-link {
+a.nav-link {
   font-size: 20px;
   font-weight: bold;
 }
-#nav_logo {
-  width: 60%;
-}
+
 /* -------------------- */
   /* SITES */
 /* -------------------- */
+html{
+  padding-top: ;
+}
 strong.bullet{
   font-weight: bold;
   font-size: 35px;
