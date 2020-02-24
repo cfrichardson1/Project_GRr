@@ -1,1 +1,24 @@
-body padding is excessive on top of CIRCUIRT Syndicate LOGO
+<!------------------- NAVBAR ------------------->
+<!-- LOGO -->
+<div class="d-flex justify-content-center">
+  <img src="../static/logo2.png" class="img-fluid logo" alt="Circuit Syndicate Logo">
+</div>
+<!-- NAV -->
+<nav class="navbar navbar-dark navbar-expand-md bg-dark justify-content-center">
+  <button class="navbar-toggler ml-1" type="button" data-toggle="collapse" data-target="#collapsingNavbar2">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse">
+    <ul class="navbar-nav mx-auto text-center">
+      <li class="nav-item active align-middle">
+        <a class="nav-link" href="index.html">Home</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="product.html">Downpipe</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="about.html">About</a>
+      </li>
+    </ul>
+  </div>
+</nav>
