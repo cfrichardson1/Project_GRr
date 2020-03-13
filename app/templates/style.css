@@ -33,7 +33,6 @@ a.nav-link {
   font-size: 20px;
   font-weight: bold;
 }
-
 /* -------------------- */
   /* SITES */
 /* -------------------- */
@@ -52,5 +51,14 @@ img.landing{
 h1, strong.landing_text{
   font-size: 200%;
   font-weight: bold;
+}
+/* -------------------- */
+  /* PRODUCT TEXT */
+/* -------------------- */
+#left_Vband_closeup{
+  position: absolute;
+  top:80%;
+  left:70%;
+  font-size: 20px;
 }
 </style>

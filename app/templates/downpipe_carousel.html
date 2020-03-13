@@ -6,13 +6,16 @@
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img class="d-block w-100" src="/static/product_description.png"alt="Downpipe Description">
+      <img class="d-block w-100" src="/static/product_description.png" alt="Flex Bellows Description" id="flex_bellow">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="/static/product_left_vband.png" alt="Vband Connector close up">
+      <div class="container">
+        <img class="d-block w-100" src="/static/product_left_vband.png" alt="Vband Connector close up">
+        <div id="left_Vband_closeup">That close up<br> though!</div>
+      </div>
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="/static/product_vband.png" alt="Vband Connector">
+      <img class="d-block w-100" src="/static/product_vband.png" alt="Vband Connector Description" id="vband_description">
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -24,3 +27,12 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
+<!-- image draw text -->
+<script>
+function myFunction() {
+  var x = document.getElementById("left_Vband_closeup").src;
+  var ctx = x.getContext("2d");
+  ctx.fillStyle = "#FF0000";
+  ctx.fillRect(0, 0, 150, 75);
+}
+</script>
