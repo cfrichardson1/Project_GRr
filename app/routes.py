@@ -2,6 +2,9 @@
 from app import app
 from flask import redirect, render_template, url_for
 
+@app.route('/about.html')
+def about():
+	return render_template('site_about.html', title_bar ='Circuit Syndicate')
 
 @app.route('/index.html')
 def home():
